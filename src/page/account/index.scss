@@ -1,0 +1,160 @@
+$purpole1 : #8900f2 ; 
+$purple2 :#6a00f4  ; 
+$red1:#d00000 ; 
+$red2:#9d0208 ; 
+$green:#1dd3b0; 
+$black :#242423 ; 
+$black2:#0a0908 ; 
+$white:rgb(245, 245, 245) ; 
+.table{
+            @media(min-width:  798px){
+                        min-height: 230px;
+            
+            }
+            width: 250px;
+            padding:20px 0px ; 
+            padding-right: 10px;
+            border-right: solid 1px gainsboro;
+            @media(max-width:798px){
+                        display: flex;
+                        margin: auto;
+                        max-height: 50px;
+                        border:none ; 
+                        margin-top:-20px ;
+                       .one{
+                        } 
+            }
+            .one{
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between ; 
+                        margin-bottom: 20px;
+                        transition: .3s;
+                        cursor: pointer;
+                        &:hover {
+                                    color:$purple2
+                        }
+                        @media(max-width:798px){
+                                    >div:last-child{
+                                                display: none;
+                                    }
+                        } 
+            }      
+               
+}
+.account {
+            padding: 30px 20px ; 
+            width: 70%;
+            margin: auto; min-height: 600px;
+            display: flex;
+            align-items: flex-start;
+            margin-top: 30px;
+            @media(max-width:798px){
+                        flex-direction: column;
+                        margin-top:0px;
+                        align-items:center;
+                        min-height: 0;
+                        .content {
+                                    margin-top: 0;
+                        }
+
+            }
+            .content{
+                        margin-top: 20px;
+                        margin-left: 30px;
+                        p{
+                                    margin-bottom: 20px;
+                        }
+            }
+}
+table {     width: 100%;
+            background-color: $black;
+            tr{
+                        border: solid 1px #000 ;
+                        th , td {
+                                    margin-left: 10px;
+                                    padding: 10px;
+                                    background-color: white;
+                        }
+            }
+            button{
+                        width: 100%;
+                        border-radius: 5px;
+                        border:none ; outline:none ; 
+                        background-color: $purple2;
+                        color:white ; 
+                        transition: .3s;
+                        padding:5px 10px ; 
+                        &:hover{
+                                    background-color: $black2;
+                                    cursor: pointer;
+                        }
+            }
+}
+.downloads{
+            width: 100%;
+            margin-left: 20px;
+            color:white  ; 
+            background-color: $purple2;
+            display: flex;
+            align-items: center;
+            padding:10px 20px ;    
+            cursor: pointer; 
+            span{
+                        margin : 0 20px  ; 
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+            }
+}
+.payment{   
+            h6{
+            font-size: 25px;
+            margin-bottom: 15px;
+            @media (max-width:798px) {
+            font-size: 20px;
+            margin-bottom: 10px;
+            }
+            }
+            p > span {
+            color:$red1 ; 
+            }
+            p{
+            margin-bottom: 10px;
+            }
+            >div > div > input{
+                        width: 100%;
+                        border:$black2 solid 2px ; 
+                        padding: 7px 5px ;  
+                        outline:none ; 
+                        &:focus{
+                        border:$purple2 solid 2px ; 
+
+                        }
+            } 
+            .input{
+            display: flex;
+            border:$purple2 solid 2px ;
+            padding: 7px 5px ;  
+            input{
+                        width: 95%;
+                        border:none ; 
+                        outline:none ; 
+                        &:focus{
+                                    .input{
+
+                                    }
+                        }
+            }           
+            }
+            button{
+                        background-color: $purple2;
+                        color:white ;
+                        padding: 10px 5px ; 
+                        margin-top: 15px ;
+                        margin-left: 19px;
+                        border: none ;
+                        cursor: pointer;
+            }
+}

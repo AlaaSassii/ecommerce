@@ -1,0 +1,305 @@
+$purpole1 : #8900f2 ; 
+$purple2 :#6a00f4  ; 
+$red1:#d00000 ; 
+$red2:#9d0208 ; 
+$green:#1dd3b0; 
+$black :#242423 ; 
+$black2:#0a0908 ; 
+$white:rgb(245, 245, 245) ; 
+.shop{
+            .container{
+                        width: 80%;
+                        margin: auto;
+                        margin-top: 50px;
+                        position: relative;
+                        min-height:80vh ; 
+                        display: flex;
+                        // media for flex
+                        .ItemsFilter{
+                                   width: 300px;
+                                    // adjust the width in media 
+                                    max-height: 100%;
+                                    // adjust the height 
+                                    overflow-y:scroll;
+                                   background-color: white;
+                                    padding:20px 20px 40px; 
+                                    .input{
+                                                background-color: $white;
+                                                padding:0px 0 0px 10px ;
+                                                margin-bottom: 30px; 
+                                                input{
+                                                            border:none ; 
+                                                            outline:none ; 
+                                                            background-color: transparent;
+                                                            width: 80%;
+                                                }
+                                                button{
+                                                            width: 20%;
+                                                            height: 100%;
+                                                            padding: 5px 0 ;
+                                                            border: none ; outline:none ; 
+                                                            background-color: $purple2;
+                                                            transition: .3s;
+                                                            color:white ; 
+                                                            cursor: pointer;
+                                                            &:hover{
+                                                                        background-color: $black2;
+                                                            }
+                                                }
+                                               
+                                    }
+                                    .filter-price{
+                                                >div{
+                                                display: flex;
+                                                align-items: center;
+                                                justify-content: space-between;
+                                                margin-bottom: 20px;
+                                                button{
+                                                            padding:5px 10px;
+                                                            background-color: $purpole1;
+                                                            color: white;
+                                                            border: none ;
+                                                            outline:none ; 
+                                                            border-radius: 20px; 
+                                                }
+                                    }
+                                    }
+                                    .filter-color{
+                                                margin-bottom: 20px;
+                                                h5{
+                                                            font-size: 22px ;
+                                                }
+                                                >div{
+                                                            padding-left: 10px;
+                                                            margin-top: 10px;
+                                                            cursor: pointer;
+                                                            transition: .3s;
+                                                            &:hover{
+                                                                        color: $purple2;
+                                                            }
+                                                }
+                                    }
+                                    .top-products{
+                                                h4{
+                                                font-size: 22px ;
+                                                }
+                                                >div{
+                                                margin-top:20px ;
+                                                width: 80%;
+                                                display: flex;
+                                                align-items: center;
+                                                justify-content: space-between ;
+                                                >div{
+                                                            display: block;
+                                                }
+                                                img{
+                                                            width: 60px;
+                                                            height: 70px;
+                                                }
+                                                }
+                                    }
+                                    .products-categories{
+                                    margin:  20px 0;
+                                    h3{
+                                                font-size: 20px;
+                                    }
+                                    li{
+                                                list-style: none;
+                                                padding-left: 10px;
+                                                margin-top: 10px;
+                                                transition: .3s;
+                                                cursor:pointer; 
+                                                &:hover{
+                                                color:$purple2
+                                                }
+                                    }
+                                    }
+                                    .categories-btn{
+                                                display: flex;
+                                                justify-content: space-between;
+                                                flex-wrap: wrap;
+                                                button{
+                                                border:none ; 
+                                                outline : none ;
+                                                background-color:$white ;
+                                                padding: 5px 5px ; 
+                                                margin-bottom: 10px;
+                                                border-radius: 2px;
+                                                cursor: pointer;
+                                                transition: .3s;
+                                                &:hover{
+                                                            background-color: $black;
+                                                            color:white ;
+                                                }
+                                    }
+                                                }
+                                    
+                        }
+                        .Items{
+                                    width: calc(100% - 300px);
+                                    // adjust the width in media 
+                        }
+            }
+            input[type=range] {
+                        height: 25px;
+                        -webkit-appearance: none;
+                        margin: 10px 0;
+                        width: 100%;
+                      }
+                      input[type=range]:focus {
+                        outline: none;
+                      }
+                      input[type=range]::-webkit-slider-runnable-track {
+                        width: 100%;
+                        height: 5px;
+                        cursor: pointer;
+                        animate: 0.2s;
+                        box-shadow: 0px 0px 0px #000000;
+                        background: $purple2;
+                        border-radius: 1px;
+                        border: 0px solid #000000;
+                      }
+                      input[type=range]::-webkit-slider-thumb {
+                        box-shadow: 0px 0px 0px #000000;
+                        border: 1px solid $purple2;
+                        height: 18px;
+                        width: 18px;
+                        border-radius: 25px;
+                        background: white;
+                        cursor: pointer;
+                        -webkit-appearance: none;
+                        margin-top: -7px;
+                      }
+                      input[type=range]:focus::-webkit-slider-runnable-track {
+                        background: $purple2;
+                      }
+                      input[type=range]::-moz-range-track {
+                        width: 100%;
+                        height: 5px;
+                        cursor: pointer;
+                        animate: 0.2s;
+                        box-shadow: 0px 0px 0px #000000;
+                        background: $purple2;
+                        border-radius: 1px;
+                        border: 0px solid #000000;
+                      }
+                      input[type=range]::-moz-range-thumb {
+                        box-shadow: 0px 0px 0px #000000;
+                        border: 1px solid $purple2;
+                        height: 18px;
+                        width: 18px;
+                        border-radius: 25px;
+                        background: white;
+                        cursor: pointer;
+                      }
+                      input[type=range]::-ms-track {
+                        width: 100%;
+                        height: 5px;
+                        cursor: pointer;
+                        animate: 0.2s;
+                        background: transparent;
+                        border-color: transparent;
+                        color: transparent;
+                      }
+                      input[type=range]::-ms-fill-lower {
+                        background: $purple2;
+                        border: 0px solid #000000;
+                        border-radius: 2px;
+                        box-shadow: 0px 0px 0px #000000;
+                      }
+                      input[type=range]::-ms-fill-upper {
+                        background: $purple2;
+                        border: 0px solid #000000;
+                        border-radius: 2px;
+                        box-shadow: 0px 0px 0px #000000;
+                      }
+                      input[type=range]::-ms-thumb {
+                        margin-top: 1px;
+                        box-shadow: 0px 0px 0px #000000;
+                        border: 1px solid $purple2;
+                        height: 18px;
+                        width: 18px;
+                        border-radius: 25px;
+                        background: white;
+                        cursor: pointer;
+                      }
+                      input[type=range]:focus::-ms-fill-lower {
+                        background: $purple2;
+                      }
+                      input[type=range]:focus::-ms-fill-upper {
+                        background: $purple2;
+                      }
+}
+.Items{
+        padding:20px 30px 40px ;      
+        .header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .select{
+            width: 200px;
+            padding:20px  ;         
+            }
+       }   
+       .items{
+            display: grid;
+            grid-template-columns: repeat(auto-fill , minmax(350px , 1fr));
+       }
+       .item{
+            margin-bottom: 20px;
+            width: 100%;
+            >button{
+              background-color: white;
+              color: $red1;
+            }
+            .image{
+                        width: 100%;
+                        background-color: #000000;
+                        width: 300px;
+                        height: 500px;
+                        position: relative;
+                        img{
+                                    width: 100%;
+                                    height: 100%;
+                        }
+                        div {
+                                    position: absolute;
+                                    top:10px ; 
+                                    left:10px; 
+                                    background-color: $purple2;
+                                    color:white ; 
+                                    padding:5px ; 
+                                    cursor: pointer;
+                        }
+                        button{
+                                    position: absolute;
+                                    bottom:10px ; 
+                                    right:10px; 
+                                    width: 40px;
+                                    height: 40px;
+                                    border-radius: 50%;
+                                    cursor: pointer;
+                                    border:none ; 
+                                    outline:none  ; 
+                        }
+                       
+            }
+            .info{
+                        width: 100%;
+
+                                    background-color:white;
+                        >div:last-child{
+                        }
+                        .old-price{ 
+                                    
+                                    text-decoration: line-through;
+                        }
+                        span:last-child{
+                                    margin-left: 20px;
+
+                        }
+            }
+       }  
+}
+// refrence 
+// https://www.cssportal.com/style-input-range/

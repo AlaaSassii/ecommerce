@@ -1,0 +1,96 @@
+$purpole1 : #8900f2 ; 
+$purple2 :#6a00f4  ; 
+$red1:#d00000 ; 
+$red2:#9d0208 ; 
+$green:#1dd3b0; 
+$black :#242423 ; 
+$black2:#0a0908 ; 
+$white:rgb(245, 245, 245) ; 
+
+.blog{
+margin: auto;
+display: flex;
+width: 80%;
+.Blogs{
+     
+            .blog{
+                        margin-bottom: 40px;
+                        display: flex;
+                        align-items: center;
+                        h4{
+                        font-size: 25px;
+                        }
+                        img{
+                        width: 350px;
+                        }
+                        >div{
+                        
+                        margin-left: 30px;
+                        h4 , p{
+                        margin-bottom: 15px;
+                        }
+                        }
+            }
+}
+.side-back{
+            width: 300px;
+            img {
+                        width: 80px;
+            }
+            .input{
+            background-color: $white;
+            padding:0px 0 0px 10px ;
+            margin-bottom: 30px; 
+            input{
+                        border:none ; 
+                        outline:none ; 
+                        background-color: transparent;
+                        width: 80%;
+            }
+            button{
+                        width: 20%;
+                        height: 100%;
+                        padding: 5px 0 ;
+                        border: none ; outline:none ; 
+                        background-color: $purple2;
+                        transition: .3s;
+                        color:white ; 
+                        cursor: pointer;
+                        &:hover{
+                        background-color: $black2;
+                        }
+            }            
+            }
+            .recents-post{
+                        margin-top: 30px;
+                        h2{
+                        margin-bottom: 10px;
+                        }
+                        >div{
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 7px;
+                        margin-top: 10px;
+
+                        p{
+                        font-family: 'Open Sans', sans-serif;
+                        font-size: 15px;
+                        margin-left: 5px;
+                        }
+                        }
+                        
+            }
+            .categories{
+            margin-bottom: 30px;
+            margin-top: 30px;
+                        >div{
+                        margin-top: 10px;
+                        p{
+                        margin-top: 10px;
+
+                        }
+                        }
+
+            }
+}
+}

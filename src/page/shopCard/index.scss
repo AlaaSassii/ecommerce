@@ -1,0 +1,110 @@
+$purpole1 : #8900f2 ; 
+$purple2 :#6a00f4  ; 
+$red1:#d00000 ; 
+$red2:#9d0208 ; 
+$green:#1dd3b0; 
+$black :#242423 ; 
+$black2:#0a0908 ; 
+$white:rgb(245, 245, 245) ; 
+.ShoppingCart{
+            width: 65%;
+            @media (max-width:798px) {
+            width: 90%;
+                        
+            }
+            margin: auto;
+            .info{
+                        margin-top: 50px;
+                        display: flex;
+                        align-items: flex-start;
+                        justify-content: space-between;
+                        @media(max-width:798px){
+                        flex-direction: column;
+                        table{
+                        width: 90%;
+                        margin: auto;
+                        margin-bottom: 20px;
+                        }
+                        .cart-totals{
+                                    margin-top: 20px;
+                                    width: 90%;
+                                    margin: auto;       
+                        }
+                        }
+            }
+            .header{
+                        background-color: $purple2;
+            padding:10px 12px ; 
+            color:white ; 
+            font-weight: 200 ; 
+           
+            }
+            table{
+                        width: 60%;
+            background-color: #ccc; 
+            th,td {
+            background-color: white;
+            padding:10px 5px; 
+            text-align: center;
+            }
+            img{
+               width: 100px;
+               height: 110px;         
+            }
+            tr> th:first-child , tr > td:first-child{
+                        width: 150px;
+            }
+            td > div{
+                        margin: auto;
+                        width: 100px;
+                        border: $black2 solid 1px;
+                        border-radius: 20px;
+                        display: flex;
+                        justify-content: space-between;
+                        padding:5px 2px
+            }
+            button{
+            border:none ; 
+            outline:none ; 
+            background-color: transparent;
+            }
+            }
+            .cart-totals{
+                        width: 30%;
+            border:1px solid #ccc ; 
+            padding:20px; 
+            h5{
+            font-size: 25px ;
+            }
+            h6{
+            font-size: 22px ;
+
+            }
+            .underline{
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        border-bottom: 2px solid #ccc ;
+                        margin-bottom: 10px;
+                        >div:first-child{
+                        font-weight: 600;
+                        }
+                        span , div:last-child{
+                                    color:$purple2;
+                                    font-weight: 400;
+                        >span{
+                        color:$black2  ; 
+                        }
+                       
+                        }
+                        padding:10px ; 
+            }
+            .underline:last-child{
+                        border: none ;
+            }
+            .noy{
+                        color:$purple2
+                        }
+            }
+            
+}

@@ -1,0 +1,89 @@
+$purpole1 : #8900f2 ; 
+$purple2 :#6a00f4  ; 
+$red1:#d00000 ; 
+$red2:#9d0208 ; 
+$green:#1dd3b0; 
+$black :#242423 ; 
+$black2:#0a0908 ; 
+$white:rgb(245, 245, 245) ; 
+
+iframe{
+            width: 100vw;
+            height: 500px;
+}
+.contact-us{
+           box-sizing: border-box;
+            margin-bottom: 20px;
+            margin-top: 50px;
+            h6{
+                        font-size: 22px; 
+                        margin-bottom: 10px;
+                        }
+            >div{
+                       
+            width:60%;
+            @media(max-width:798px){
+            width:100%;
+            padding-left: 20px;
+            }
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            margin: auto;
+            .info{
+            width: 400px;
+            padding:10px; 
+            div{
+            margin-top: 20px;
+            
+            }
+            }
+            }
+            .inputs{
+                        padding:10px; 
+
+                        width: 60%;
+            div,p{
+                        margin-bottom: 10px;
+            }
+            span{
+                        color: $red1;
+            }
+            .twoinputs{
+                        
+                        input{
+                                    width: 90%;
+                                    padding:5px 7px ; 
+                        }
+                        >div:last-child{
+                        }
+            }
+            textarea{
+                        width: 90%;
+                        padding:5px 7px ;
+                        height: 200px;
+            }
+            button{
+                        width: 100px;
+                        padding:5px 7px ;
+                        border:none ; 
+                        outline:none ; 
+                        background-color: $purpole1;
+                        color:white ;
+                        display: block;
+                        margin-left: calc(90% - 100px );
+                        cursor: pointer;
+                        transition: .3s;
+                        &:hover{
+                                    background-color: $purple2;
+
+                        }
+                        
+            }
+            @media(max-width:798px){
+                        textarea , input , .inputs{
+                                    width: 100%;
+                        }
+                        }
+            }
+}

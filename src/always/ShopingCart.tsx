@@ -1,19 +1,23 @@
-import React , {useState} from 'react'
+import React , {useState , useEffect} from 'react'
 import {AiFillEye, AiOutlineClose} from 'react-icons/ai'
 import { BsFillCartFill } from 'react-icons/bs';
 import './index.scss'
-const ShopingCart = () => {
-            const [close , setClose] = useState<boolean>(true)  ;
-            const remove = ():void => {
-                        setClose(true) ; 
-            }
+
+interface Props {
+  setShopCa : (b:boolean) => void 
+  showShopingCart : boolean
+}
+
+const ShopingCart = ({setShopCa , showShopingCart}:Props) => {
+         console.log(showShopingCart);
+         
   return (
-    <div className={close ? "shoping-cart hide-shoping-cart" :"shoping-cart"}>
+    <div className={! showShopingCart ? "shoping-cart hide-shoping-cart" :"shoping-cart"}>
             <div className="Header">
                         <div>
                         Shoping Cart <span>0</span>
                         </div>
-                        <button  onClick={remove}><AiOutlineClose style={{fontSize:"25px",fontWeight:800}}/></button>
+                        <button  onClick={()=>setShopCa(showShopingCart)}><AiOutlineClose style={{fontSize:"25px",fontWeight:800}}/></button>
             </div>
             <div className="Center">
                         <h3>no items yet</h3>
