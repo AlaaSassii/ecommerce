@@ -14,11 +14,11 @@ const SearchBlogs = () => {
             <p>Lorem ipsum dolor, sit amet consectetur .</p>
             </div>
             <div>
-            <img src="https://images.pexels.com/photos/1036620/pexels-photo-1036620.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="image" />
+            <img src="https://images.pexels.com/photos/3755923/pexels-photo-3755923.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="image" />
             <p>Lorem ipsum dolor, sit amet consectetur .</p>
             </div>
             <div>
-            <img src="https://images.pexels.com/photos/1036620/pexels-photo-1036620.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="image" />
+            <img src="https://images.pexels.com/photos/1139850/pexels-photo-1139850.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="image" />
             <p>Lorem ipsum dolor, sit amet consectetur .</p>
             </div>
             </div>

@@ -104,25 +104,65 @@ const index = () => {
    </section>
    <section className="section4">
     <div className="container">
+      <div>
       <h6>
         TOP SALE ON THIS WEEK 
       </h6>
       <h2>Feature Products</h2>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo minima ipsa debitis necessitatibus odit id culpa accusamus excepturi aspernatur perferendis!</p>
+      </div>
       <div className="images">
-      {
-        [1,3,4,5,6,7].map(product =><div>
           <div className='image'>
-          <img  className='image1' src={link1}/>
-          <img className='image2' src={link2} />
+          <img  className='image1' src="https://img.shein.com/images/shein.com/201703/c2/14894667633545845716_thumbnail_600x799.webp"/>
+          <img className='image2' src="https://img.shein.com/images/shein.com/201703/f7/14894667641749550532_thumbnail_600x799.webp" />
           <button><AiOutlineHeart/></button>
-          </div>
-          <div className="information">
-            
-          </div>
           </div> 
-        )
-      }
+          <div className='image'>
+          <img  className='image1' src="https://img.ltwebstatic.com/images3_pi/2021/05/31/1622434682821a322ef120f24519a50f9eb08b6dec_thumbnail_600x.webp"/>
+          <img className='image2' src="https://img.ltwebstatic.com/images3_pi/2021/05/31/1622434684c35c06ed460e1df1a3c8255d65579afd_thumbnail_600x.webp" />
+          <button><AiOutlineHeart/></button>
+          </div> 
+          <div className='image'>
+          <img className='image1' src="https://img.ltwebstatic.com/images3_pi/2022/02/25/1645783289828f36f5f2245c36ff5323b02342ac30_thumbnail_600x.webp" />
+          <img  className='image2' src="https://img.ltwebstatic.com/images3_pi/2022/02/25/1645783287e7043f4bda29df441514f019c024c511_thumbnail_600x.webp"/>
+          <button><AiOutlineHeart/></button>
+          </div> 
+          <div className='image'>
+          <img  className='image1' src="https://img.ltwebstatic.com/images3_pi/2022/01/18/1642484857fb61abefd87507c7f9bb537d0d54e07f_thumbnail_600x.webp"/>
+          <img className='image2' src="https://img.ltwebstatic.com/images3_pi/2022/01/18/16424848596cd91125566c94c3914e6b94254fdc42_thumbnail_600x.webp" />
+          <button><AiOutlineHeart/></button>
+          </div> 
+          <div className='image'>
+          <img  className='image1' src="https://img.ltwebstatic.com/images3_pi/2022/08/09/16600384553edc27f3d0e961f9eefcc015c66c222a_thumbnail_600x.webp"/>
+          <img className='image2' src="https://img.ltwebstatic.com/images3_pi/2022/08/09/16600384582d21bb3cac0b9cfbf6bd5e31a1e1b301_thumbnail_600x.webp" />
+          <button><AiOutlineHeart/></button>
+          </div> 
+          <div className='image'>
+          <img  className='image1' src="https://img.ltwebstatic.com/images3_pi/2021/12/14/1639460640e7c4db610e9ef4e5bff131b915212994_thumbnail_600x.webp"/>
+          <img className='image2' src="https://img.ltwebstatic.com/images3_pi/2021/12/14/16394606425579d24c086c099db1fb0754339c2cea_thumbnail_600x.webp" />
+          <button><AiOutlineHeart/></button>
+          </div> 
+          <div className='image'>
+          <img  className='image1' src="https://img.ltwebstatic.com/images3_pi/2022/04/13/16498330386065c1ee965400595f00986dba677058_thumbnail_600x.webp"/>
+          <img className='image2' src="https://img.ltwebstatic.com/images3_pi/2022/04/13/1649833042e20773aa4e21538ecef4ce9a2c2d31ab_thumbnail_600x.webp" />
+          <button><AiOutlineHeart/></button>
+          </div> 
+          <div className='image'>
+          <img  className='image1' src="https://img.ltwebstatic.com/images3_pi/2021/02/22/1613967913a764618d6783eb9b155469a2d3ecb45a_thumbnail_600x.webp"/>
+          <img className='image2' src="https://img.ltwebstatic.com/images3_pi/2021/02/22/161396791053a8507d3f5b4a1580680cc6ab31402f_thumbnail_600x.webp" />
+          <button><AiOutlineHeart/></button>
+          </div> 
+          <div className='image'>
+          <img  className='image1' src="https://img.ltwebstatic.com/images3_pi/2021/09/14/16316161085d24ad9f544364a0fc6e714f54b0ed86_thumbnail_600x.webp"/>
+          <img className='image2' src="https://img.ltwebstatic.com/images3_pi/2021/09/14/16316161102d2d077a996362e15d52bb788d1b6479_thumbnail_600x.webp" />
+          <button><AiOutlineHeart/></button>
+          </div> 
+          <div className='image'>
+          <img  className='image1' src="https://img.ltwebstatic.com/images3_pi/2022/08/29/16617552870db52d2a7379747ea8499e644e77dc42_thumbnail_600x.webp"/>
+          <img className='image2' src="https://img.ltwebstatic.com/images3_pi/2022/08/29/16617552829b40a53d51bc4686bf646eef6bd93939_thumbnail_600x.webp" />
+          <button><AiOutlineHeart/></button>
+          </div> 
+         
       </div>
     </div>
    </section>

@@ -162,11 +162,15 @@ $white:rgb(245, 245, 245) ;
     margin-top: 60px;
     margin-bottom: 20px;
     .container{
+
         margin:auto; 
         width: 70%;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
+
+        >div:first-child{
+        }
         p{
     font-family: 'Open Sans', sans-serif;
             line-height: 1.6;
@@ -259,12 +263,47 @@ $white:rgb(245, 245, 245) ;
     .container{
         width: 80%;
         margin: auto;
+        >div:first-child{
+            text-align: center;
+            h6{
+                font-size: 25px;
+                margin-bottom: 10px;
+                color:$purpole1 ;
+                @media(max-width:798px){
+                    font-size: 18px;
+                    
+                }
+            }
+            h2{
+                font-size: 40px;
+                margin-bottom: 10px;
+                color:deeppink ;
+
+                @media(max-width:798px){
+                font-size: 25px;
+
+                }
+            }
+            p{
+                margin-bottom: 10px;
+                font-weight: 500;
+            }
+        }
         .images{
             display: grid;
             grid-template-columns: repeat(auto-fill , minmax(240px ,1fr)) ; 
-            grid-gap: 20px;
+            gap: 50px;
+            margin-bottom: 30px;
+            @media(max-width:798px){
+                margin-top: 40px;
+                grid-template-columns: repeat(auto-fill , minmax(140px ,1fr)) ; 
+
+            }
         }
         .image{
+            @media(max-width:798px){
+                margin: auto;
+            }
             position: relative;
             width: 200px;
             height: 270px;
@@ -311,6 +350,9 @@ $white:rgb(245, 245, 245) ;
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                border: none;
+                outline: none;
+                background-color: white;
             }
             
         }

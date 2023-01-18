@@ -315,3 +315,17 @@ footer{
 .hide-Heart-cart{
     right: -500px;
 }
+
+.buttons{
+    background-color: white;
+    button{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: none;
+        outline:none ;
+        background-color: deeppink;
+        color: white;
+        margin : 0 5px ;
+    }    
+}

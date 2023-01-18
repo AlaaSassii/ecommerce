@@ -10,10 +10,22 @@ $white:rgb(245, 245, 245) ;
 .blog{
 margin: auto;
 display: flex;
+@media(max-width:798px){
+            flex-direction: column;
+            .blog{
+                        text-align: left;
+                        >div{
+                                    margin-top: 30px;
+
+                        }
+
+            }
+}
 width: 80%;
 .Blogs{
      
             .blog{
+                       
                         margin-bottom: 40px;
                         display: flex;
                         align-items: center;
@@ -29,6 +41,11 @@ width: 80%;
                         h4 , p{
                         margin-bottom: 15px;
                         }
+                        }
+                        @media(max-width:798px){
+                                    >div{
+                                                margin-left: 0;
+                                    }
                         }
             }
 }

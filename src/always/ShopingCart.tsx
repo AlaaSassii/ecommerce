@@ -1,5 +1,5 @@
 import React , {useState , useEffect} from 'react'
-import {AiFillEye, AiOutlineClose} from 'react-icons/ai'
+import {AiFillEye, AiOutlineClose, AiOutlineMinus, AiOutlinePlus} from 'react-icons/ai'
 import { BsFillCartFill } from 'react-icons/bs';
 import './index.scss'
 import { useSelector } from 'react-redux';
@@ -39,9 +39,9 @@ const ShopingCart = ({setShopCa , showShopingCart}:Props) => {
                                 <p>{product.name.substring(0,20)}..</p>
                                 <p>${product.price}</p>
                                 <div className='buttons'>
-                              <button onClick={()=>addAmount(product.id)}>+</button>
+                              <button onClick={()=>addAmount(product.id)}><AiOutlinePlus/></button>
                               <span>{product.amount}</span>
-                              <button onClick={()=>removeAmount(product.id)}>-</button>
+                              <button onClick={()=>removeAmount(product.id)}><AiOutlineMinus/></button>
                               </div>
                               </div>
                               

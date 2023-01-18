@@ -48,10 +48,13 @@ const Index:FC = () => {
   useEffect(()=>{
     setProducts(products2.filter((product:Product) => product.price > price ))
   },[price])
+  const [show , setShow] = useState(false)
+  
   return (
             <section className='shop'>
+              <button className='showbutton' onClick={()=>setShow(!show)}>{show ? 'show' : 'Hide'} </button>
             <div className='container'>
-            <ItemsFilter inputRangeRef={inputRangeRef} price={price} rangeValue={rangeValue} changeRange={changeRange} />
+            <ItemsFilter show={show} inputRangeRef={inputRangeRef} price={price} rangeValue={rangeValue} changeRange={changeRange} />
             <Itemss products={products} loading={loading}/>
             </div>
             </section>

@@ -7,6 +7,23 @@ $black :#242423 ;
 $black2:#0a0908 ; 
 $white:rgb(245, 245, 245) ; 
 .shop{
+
+
+    .showbutton{
+      display: none;
+      @media(max-width:798px){
+            display: block;
+            top:50px ; 
+            right: 50px;
+            position: fixed;
+            width: 50px;
+            height: 50px;
+            border: none;
+            outline: none ;
+            border-radius: 50%;
+            z-index: 99;
+      }
+    }
             .container{
                         width: 80%;
                         margin: auto;
@@ -15,14 +32,22 @@ $white:rgb(245, 245, 245) ;
                         min-height:80vh ; 
                         display: flex;
                         // media for flex
+                       
                         .ItemsFilter{
-                                   width: 300px;
-                                    // adjust the width in media 
-                                    max-height: 100%;
-                                    // adjust the height 
-                                    overflow-y:scroll;
-                                   background-color: white;
+                                  width: 300px;
+                                  max-height: 100%;
+                                  overflow-y:scroll;
+                                  background-color: white;
                                     padding:20px 20px 40px; 
+                                    transition: .2s;
+                                    @media(max-width:798px){
+                                      position: fixed;
+                                      z-index: 99;
+                                      top:0 ; 
+                                      left: -400px;
+                                      min-height:100vh ;
+                                     
+                                    }
                                     .input{
                                                 background-color: $white;
                                                 padding:0px 0 0px 10px ;
@@ -134,6 +159,11 @@ $white:rgb(245, 245, 245) ;
                                     }
                                                 }
                                     
+                        }
+                        @media(max-width:798px){
+                          .showItemsFilter{
+                            left: 0;
+                          }
                         }
                         .Items{
                                     width: calc(100% - 300px);

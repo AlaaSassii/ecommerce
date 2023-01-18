@@ -6,15 +6,17 @@ interface Props {
   price: number | string , 
   rangeValue : number , 
   changeRange : () => void , 
+  show:boolean
 }
 // e:InputHTMLAttributes<HTMLInputElement>
-const ItemsFilter = ({inputRangeRef , price , rangeValue ,changeRange }:Props) => {
+const ItemsFilter = ({inputRangeRef , price , rangeValue ,changeRange , show}:Props) => {
            
             // function 
+      console.log(show);
         
 
   return (
-    <div className='ItemsFilter'>
+    <div className={show ? 'ItemsFilter showItemsFilter' : 'ItemsFilter'}>
             <div className="input">
                         <input type="text" placeholder='search..' />
                         <button>search</button>
