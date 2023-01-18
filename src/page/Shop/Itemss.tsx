@@ -6,6 +6,11 @@ import {style1 , style2} from './interfaces'
 import './index.scss' ; 
 import Item from "./Item"
 import Loading from "../../asset/Loading"
+
+interface Props {
+  products : products[] 
+  loading : boolean
+}
 type rating ={
             count: number ,
             rate:  number 
@@ -19,17 +24,8 @@ type products = {
             rating:rating , 
             title: string , 
 }
-const Itemss = () => {
-            const [products , setProducts] = useState<products[]>([]) ; 
-            const [loading , setLoading] = useState<boolean>(true)
-            useEffect(()=>{
-                        axios("https://fakestoreapi.com/products?limit=10")
-                                    .then(resp =>{
-                                                setProducts(resp.data)
-                                                setLoading(false) ; 
-                                    })
-                                    .catch(err => console.log(err)) ; 
-            },[])
+const Itemss = ({ products , loading}:Props) => {
+           
             if(loading) return <Loading/>
   return (
     <div className="Items">

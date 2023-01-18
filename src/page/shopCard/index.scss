@@ -47,6 +47,7 @@ $white:rgb(245, 245, 245) ;
             padding:10px 5px; 
             text-align: center;
             }
+            
             img{
                width: 100px;
                height: 110px;         
@@ -63,12 +64,24 @@ $white:rgb(245, 245, 245) ;
                         justify-content: space-between;
                         padding:5px 2px
             }
-            button{
+            td > button{
             border:none ; 
             outline:none ; 
-            background-color: transparent;
+            background:$green ; 
+             color:white ; 
+            } 
+          
+            td > div  button {
+               background-color: $red1;
+               width: 30px;
+               height: 30px;
+               display: flex;
+               align-items: center;
+               justify-content: center;
             }
+           
             }
+            
             .cart-totals{
                         width: 30%;
             border:1px solid #ccc ; 

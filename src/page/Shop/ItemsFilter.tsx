@@ -1,18 +1,17 @@
 import React ,{FC, useRef, useState , InputHTMLAttributes} from 'react'
 import { FaStar } from 'react-icons/fa' ; 
 import {style1 , style2} from './interfaces'
-const ItemsFilter:FC = () => {
-            const inputRangeRef = useRef<any>(null) ; 
-            const maxPrice :number = 40 
-            const [price ,setPrince] = useState<number | string>(40) ; 
-            const [rangeValue ,setRangeValue] = useState(100) ; 
+interface Props {
+  inputRangeRef : any , 
+  price: number | string , 
+  rangeValue : number , 
+  changeRange : () => void , 
+}
+// e:InputHTMLAttributes<HTMLInputElement>
+const ItemsFilter = ({inputRangeRef , price , rangeValue ,changeRange }:Props) => {
+           
             // function 
-            const changeRange = (e:InputHTMLAttributes<HTMLInputElement>):void =>{
-                        const number :number = inputRangeRef.current.value ; 
-                        setRangeValue(number)
-                        const oneRange :number = maxPrice / 100 
-                        setPrince((oneRange * number ).toFixed(0))
-            }
+        
 
   return (
     <div className='ItemsFilter'>
@@ -21,10 +20,10 @@ const ItemsFilter:FC = () => {
                         <button>search</button>
             </div>
             <div className="filter-price">
-                        <input style={{ }} value={rangeValue} type="range" ref={inputRangeRef} onChange={e => changeRange(e)} />
+                        <input style={{ }} value={rangeValue} type="range" ref={inputRangeRef} onChange={e => changeRange()} />
                         <div>
                         <button>filter</button>
-                        <p>Price: $10 -- ${price} </p>
+                        <p>Price: $0 -- ${price} </p>
                         </div>
             </div>
             <div className="filter-color">

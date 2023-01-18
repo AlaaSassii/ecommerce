@@ -1,20 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
-import Header from './always/Header';
 import reportWebVitals from './reportWebVitals';
-import Footer from './always/Footer';
-import ShopingCart from './always/ShopingCart';
-import HeartCart from './always/HeartCart';
-import HeartPage from './page/shopCard' ; 
-import Products from './page/cart/Products';
-import Itemss from './page/Shop/Itemss';
+import { Provider } from 'react-redux';
+import {store} from './States/index'
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
+    <Provider store={store}>
     <App />
+    </Provider>
   </React.StrictMode>
 );
 

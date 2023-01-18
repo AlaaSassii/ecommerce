@@ -12,6 +12,7 @@ import AccDownloads from './page/account/downloads'
 import AccOrder from './page/account/order'
 import AccPayment from './page/account/payment'
 import HeartCart from './always/HeartCart';
+import ShopCard from './page/shopCard'
 function App() {
   const [showShopingCart , setShopCa] = React.useState<boolean>(false);
   const [showHeartCart , setShowHeart] = React.useState<boolean>(false);
@@ -36,6 +37,7 @@ function App() {
         <Route path='/account/downloads' element={<AccDownloads/>}/>
         <Route path='/account/order' element={<AccOrder/>}/>
         <Route path='/account/payment' element={<AccPayment/>}/>
+        <Route path='/shopCard' element={<ShopCard/>} />
       </Routes>
       <Footer/>
     </BrowserRouter>
